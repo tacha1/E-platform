@@ -1,0 +1,170 @@
+/* #cont{
+	width:960px;
+	height:80%;
+	background-color: #fff;
+	margin-left: 150px; 
+}
+#header{
+	height: 21%;
+	width:80%;
+	background-color: #00709c;
+	margin-left: 60px;
+}
+#body{
+	width: 80%;
+	height:80%;
+	background-color:#fff;
+	margin-left: 60px;
+
+}
+footer{
+	height: 10%;
+	width:80%;
+	background-color: #fff;
+	margin-left: 60px;
+	text-align: center;
+	font-family: verdana, arial, sans-serif;
+	font-weight: bold;
+	font-style: italic;
+    
+}
+#left_content{
+	width: 22.4%;
+	height:85%;
+	background-color: #000;
+	float:left;
+	margin-left: 10px;
+	margin-top: 20px;
+}
+#center_content{
+	width:50%;
+	height:70%;
+	background-color:#fff;
+	float:left;
+	margin-left: 0px;
+	margin-top: 20px;
+}
+#right_content{
+	width: auto;
+	height:70%;
+	background-color: #fff;
+	float:left;
+	margin-right: 0 10px;
+	
+}
+#p{
+    text-align: left;
+    margin-left: 15px;
+    font-size: 12px;
+    font-style: italic;
+    font-family: arial, sans-serif;
+}
+#menu{
+	width:80%;
+	height:10%;
+	background-color: #fff;
+	margin-left: 60px;
+}
+#menu ul li{
+	display: inline-block;
+}
+#menu ul li a{
+	display: inline-block;
+	text-decoration: none;
+	padding: 20px;
+    font-size: 20px;
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
+}
+#menu ul li a:hover{
+    background-color: blue;
+    border-radius: 10px;
+}
+#menu ul li a:visited{
+    background-color: blue;
+    border-radius: 10px;
+    color:#000;
+}
+#menu ul li a:active{
+    background-color: blue;
+    border-radius: 10px;
+    color:#000;
+}
+#h1{
+    font-size: 8px;
+    text-align: center;
+}
+#h2{
+    font-size: 10px;
+    text-align: center;
+    font-style: italic;
+}
+#h20{
+    color: white;
+    text-align: center;
+}
+#h30{
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+}
+#submit{
+    background-color: yellow;
+}
+#list li{
+	transition:1s;}
+#leftmenu ul{
+	display:block;
+	margin:0;
+	padding:0;
+	height:auto;
+	overflow:hidden;
+	clear:both;
+	width:100%;
+}
+#leftmenu li{
+	float:left;
+	width:100%;
+}
+
+#leftmenu ul li a{
+	display:block;
+	text-decoration:none;
+	padding:15px 10px;
+	color:yellow;
+    font-style: italic;
+    font-weight: bold;
+	}
+#leftmenu ul li a:hover{
+	background:#FFFFFF;
+	color:#000;
+	font-weight:bold;
+    text-transform:uppercase;
+}
+.mo
+{
+	color: white;
+	font-size: 4.5em;
+	font-style: italic;
+}
+.updates
+{
+	color: yellow;
+	font-size: 4.5em;
+	font-style: italic;
+}
+.sign
+{
+	color: white;
+	font-size: 1.2em;
+	position: absolute;
+	padding-top: 80px;
+
+
+}
+#a{
+    text-decoration: none;
+    color:blue;
+    padding-left: 200px;
+} */
