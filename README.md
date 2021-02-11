@@ -27,24 +27,16 @@ The required installations are:
 
 asgiref==3.3.1
 beautifulsoup4==4.9.3
-confusable-homoglyphs==3.2.0
-dj-database-url==0.5.0
-Django==3.1.5
+Django==1.11
 django-bootstrap4==2.3.1
-django-heroku==0.3.1
-django-registration==2.4.1
-django-utils-six==2.0
-djangorestframework==3.11.1
-emailvalidator==0.3
 importlib-metadata==2.1.1
 Pillow==8.1.0
 psycopg2==2.7.5
-python-decouple==3.4
-pytz==2020.5
-soupsieve==2.1
+pytz==2021.1
+soupsieve==2.2
 sqlparse==0.4.1
-whitenoise==5.2.0
 zipp==3.4.0
+
 
 ## Technologies Used
 
