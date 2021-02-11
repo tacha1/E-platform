@@ -1,3 +1,4 @@
+
 {%extends 'base.html'%}
 {% load static %}
 {% block content %}
@@ -7,15 +8,16 @@
       <div class="row">
         {% for one in users %}   
         <div class="col-sm-4">
-            <div class="card" style="width: 18rem;">
+            <div class="card-body">
               <a href="{%url 'single_user' one.id%}">
-                <img class="card-img-top" src="{{one.profile_picture.url}}" width="400" height="300" alt="Card image cap"></a>
-                <div class="card-body">
-                  <p class="card-text">{{one.title}}</p>
-                </div>
-              </div>
+                <img class="card-img-top" src="{{one.profile_picture.url}}" width="400" height="300">
+              </a>
+              <h5 class="card-title">{{one.names}}, {{one.title}}</h5>
+            </div>
+        </div>
         {% endfor %}
       </div>
+      <footer></footer>
 </div>
 
 {% endblock %}
