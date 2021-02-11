@@ -7,7 +7,7 @@ class service(models.Model):
     title = models.CharField(max_length =30)
     service_image = models.ImageField(upload_to = 'landing_images/', null=True)
     description = models.CharField(max_length =300)
-    link = models.URLField(max_length=128, db_index=True, unique=True, null=True)
+    details = models.CharField(max_length =1000, null=True)
     user = models.ForeignKey(User,on_delete=models.CASCADE, null=True)
     date = models.DateTimeField(auto_now_add=True, null=True)
 
@@ -33,9 +33,13 @@ class service(models.Model):
 class Profile(models.Model):
     user = models.ForeignKey(User,on_delete=models.CASCADE)
     profile_picture = models.ImageField(upload_to = 'profile_photos/', null=True)
-    bio = models.CharField(max_length =300)
-    contact = models.CharField(max_length =30)  
+    names = models.CharField(max_length =30, null=True)
+    email = models.EmailField(max_length=50, null=True)
+    phone = models.CharField(max_length=12, null=True)
+    title = models.CharField(max_length =30, null=True) 
+    summary = models.CharField(max_length =1000, null=True)
     services = models.ForeignKey(service,on_delete=models.CASCADE, null=True)
+    more_info = models.CharField(max_length =300, null=True)
 
     @classmethod
     def get_profile(cls):

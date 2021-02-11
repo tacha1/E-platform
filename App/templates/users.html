@@ -1,0 +1,21 @@
+{%extends 'base.html'%}
+{% load static %}
+{% block content %}
+{{block.super}}
+
+<div class="container">
+      <div class="row">
+        {% for one in users %}   
+        <div class="col-sm-4">
+            <div class="card" style="width: 18rem;">
+              <a href="{%url 'single_user' one.id%}">
+                <img class="card-img-top" src="{{one.profile_picture.url}}" width="400" height="300" alt="Card image cap"></a>
+                <div class="card-body">
+                  <p class="card-text">{{one.title}}</p>
+                </div>
+              </div>
+        {% endfor %}
+      </div>
+</div>
+
+{% endblock %}

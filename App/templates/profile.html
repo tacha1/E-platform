@@ -1,0 +1,36 @@
+{%extends 'base.html'%}
+
+{% block content %}
+{{block.super}}
+
+<div class="container">
+    <ul class="nav justify-content-end">
+        <li class="nav-item">
+            <a class="btn btn-info" href="{%url 'edit'%}" style="color: black">Create Profile</a>
+        </li>
+    </ul>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="card-body">
+                <img src="{{my_profile.profile_picture.url}}" class="img-responsive">
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card-body">
+                <h3 style="margin-bottom: 3%;"><strong>Personal Statement</strong></h3>
+                <h5>Names: {{my_profile.names}}</h5>
+                <h5>Tel: {{my_profile.phone}}</h5>
+                <h5>Email: {{my_profile.email}}</h5>
+                <h5>Title: {{my_profile.title}}</h5>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="card-body">
+                <h5>Summary: {{my_profile.summary}}</h5>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

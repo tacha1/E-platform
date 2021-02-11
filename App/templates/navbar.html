@@ -7,81 +7,24 @@
     <meta name="HandheldFriendly" content="true">
 </head>
 <body>
-<div class="pos-f-t" style="font-size:80%;font-family: 'Prociono', serif;">
-    <nav class="navbar navbar-dark bg-dark">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <form action="" class="form-inline my-2 my-lg-0">
-            <input type="text" class="input-sm form-control" name="project_name" placeholder="Search">
-            <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
-        </form>         
 
-            <ul class="nav justify-content-end">
+    <div class="container">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+              <h1 class="display-4">E-Platform</h1>
+              <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+            </div>
+            
+            <ul class="nav justify-content-end" style="margin-bottom: -5%;">
                 <li class="nav-item">
-                    <a class="nav-link active" href="" style="color: white">Service</a>
-                </li>
-                
-                <div class="dropdown">
-                        <a class="btn btn-default dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:white; margin-top: 4%">
-                          API
-                        </a>
-                      
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="background-color:transparent">
-                          <a class="dropdown-item" href="" style="color: black">About us</a>
-                          <a class="dropdown-item" href="" style="color: black">Contact Us</a>
-                        </div>
-                </div>
-                    <li class="nav-item">
-                        <a class="nav-link" href="" style="color: white">Our servces</a>
-                    </li>
-                    <li class="nav-item">
-                        <span><a class="nav-link" href="" style="color: white">Register</a></span>
-                    </li>
-            </ul>
-    </nav>
-
-    <div class="collapse" id="navbarToggleExternalContent">
-        <div class="bg-dark p-4">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item active">
-                    <a class="nav-link" href="" style="color: white">Home</a>
-                </li>
-    <div id="body"><div id="left_content">
-                    <div id="h20"><h20>CATEGORIES</h20></div>
-                    <div id="leftmenu">
-                    <ul>
-                    <li><a href="">Movies</a></li>
-                    <li><a href="">Tv Shows</a></li>
-                    <li><a href="">Books</a></li>
-                    <li><a href="">Sports</a></li>
-                    <li><a href="">Musics</a></li></ul>
-                    <div id="h30"><h30>Subscribe</h30></div>
-                        <input type="text" name="name" placeholder="Your Email">
-                        <br><input type="submit" id="submit" value="Subscribe"></div></div>
-                
-                {% if user.is_authenticated %} 
-
-                <li class="nav-item">
-                    <a class="nav-link" href="" style="color: white">Profile</a>
-                </li> 
-                <li class="nav-item">
-                    <a href="" style="color: white">Change Password</a> 
+                  <a class="nav-link active" href="{%url 'home'%}">HOME</a>
                 </li>
                 <li class="nav-item">
-                    <a href="" style="color: white">Logout</a>               
-                </li>         
-                                            
-                {% else %}
-                <li class="nav-item">
-                    <a class='btn btn-default' href="" style="color: white">Login</a>         
-                </li> 
-                  
-                {% endif %}
+                  <a class="nav-link" href="{%url 'all_users' %}">ABOUT US</a>
+                </li>
             </ul>
         </div>
     </div>
-</div>
 
 </body>
 </html>

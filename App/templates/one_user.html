@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load bootstrap4 %}
+{% load static %}
+{% block content %}
+
+<div class="container" style="margin-bottom: 3%;">
+    {% for one in user %}
+    <div class="row"> 
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <div class="card-body">
+              <img src="{{one.profile_picture.url}}" width="400" height="300"><br>
+              <h5>Names: {{one.names}}</h5>
+                <h5>Tel: {{one.phone}}</h5>
+                <h5>Email: {{one.email}}</h5>
+                <h5>Title: {{one.title}}</h5><br>
+                <h5>Summary: {{my_profile.summary}}</h5><br><br>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+    {% endfor %}
+</div>
+    
+{% endblock %}
